@@ -1,4 +1,4 @@
-package BaekJoon;
+package BaekJoon.silver;
 
 /*
   TODO:
@@ -24,7 +24,7 @@ public class S4_11659 {
 
         long[] sumArr = new long[suNo + 1];
         stringTokenizer = new StringTokenizer(bufferedReader.readLine());
-        for (int i = 1; i <= suNo; i++) {
+        for (int i = 1; i <= suNo; i++) { // 합 배열 세팅
             sumArr[i] = sumArr[i - 1] + Integer.parseInt(stringTokenizer.nextToken());
         }
         for (int q = 0; q < quizNo; q++) {
